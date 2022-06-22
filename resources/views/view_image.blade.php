@@ -12,9 +12,12 @@
             <div class="col-sm" style="background-color:#197378; margin: 10px; padding:20px">
                 @foreach ($imageData as $data)
                     <img src="{{ url('public/Image/' . $data->image) }}"
-                        style="height: 100px; margin-bottom:10px; margin-right:10px; width: 150px;">
+                        style="height: 120px; margin-bottom:10px; margin-right:10px; width: 150px;">
+                    <input type="checkbox" name="love" value="love" id="love" />
                 @endforeach
             </div>
+
+
         </div>
     </div>
 @endsection

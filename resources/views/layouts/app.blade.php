@@ -32,8 +32,8 @@
                 <a class="navbar-brand" href="{{ url('home') }}">
 
                     <img src="{{ asset('images/logo.png') }}"
-                        style="height: 100px; margin-bottom:10px; margin-right:10px; width: 150px;">
-                    {{ 'Photobox' }}
+                        style="height: 30px; margin-bottom:10px; margin-right:10px; width: 150px;">
+                    {{-- {{ 'Photobox' }} --}}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -68,9 +68,6 @@
                         @else
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('home') }}">{{ __('Home') }}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('add-image') }}">{{ __('Upload') }}</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"

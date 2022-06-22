@@ -8,6 +8,12 @@
         <br />
         <form method="post" action="{{ route('images.store') }}" enctype="multipart/form-data">
             @csrf
+            <div class="row mb-0">
+                <div class="col-md-8 offset-md-4">
+                    <div style="font-size:18px;font-weight: 700; color: #1A7378">We store your cherished monents</div>
+                    <br />
+                </div>
+            </div>
 
             <div class="row mb-3">
                 <label for="image" class="col-md-4 col-form-label text-md-end">{{ __('Upload photo') }}</label>
@@ -31,6 +37,7 @@
                     @if (session()->has('success'))
                         <div>
                             <div class="alert alert-success">{{ session()->get('success') }}</div>
+                            <a href="view-image">View Photos</a>
                         </div>
                     @endif
                 </div>

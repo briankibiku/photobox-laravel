@@ -30,7 +30,10 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('home') }}">
-                    {{ 'Photobox' }}
+
+                    <img src="{{ asset('images/logo.png') }}"
+                        style="height: 30px; margin-bottom:10px; margin-right:10px; width: 150px;">
+                    {{-- {{ 'Photobox' }} --}}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -67,7 +70,7 @@
                                 <a class="nav-link" href="{{ route('home') }}">{{ __('Home') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('upload') }}">{{ __('Upload') }}</a>
+                                <a class="nav-link" href="add-image">{{ __('Upload') }}</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
@@ -128,7 +131,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm p-3 min-vh-100">
+                <div class="col-sm p-3 min-vh-100" style="background-color: #F1F1F1;">
                     @yield('content')
                 </div>
             </div>

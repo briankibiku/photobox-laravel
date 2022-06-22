@@ -1,7 +1,7 @@
 @extends('layouts.page')
 
 @section('content')
-    <div class="container" style="padding: 30px;">
+    <div class="container" style="padding: 30px; ">
         <div class="d-flex justify-content-between flex-direction-row text-right">
             <div style="font-size: 24px;font-weight: 800;">Dashboard</div>
             <a class="btn" href="add-image" style="background-color: #1A7378; color: white">Upload
@@ -40,8 +40,7 @@
                 </div>
             </div>
             <br />
-            <div> <a class="btn" href="upload" style="background-color: #1A7378; color: white">Upload 1 Photo</a> <a
-                    class="btn" href="upload" style="background-color: #1A7378; color: white">Upload Multiple Photo</a>
+            <div> <a class="btn" href="add-image" style="background-color: #1A7378; color: white">Start now</a>
             </div>
         </div>
     </div>
